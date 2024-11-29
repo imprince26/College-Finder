@@ -1,0 +1,156 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(34, 34, 52);
+}
+
+nav {
+    height:4rem;
+    width: 100vw;
+    background-color: rgb(113, 78, 195);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .2rem 2rem;
+    position: fixed;
+    top:0;
+    z-index: 999;
+}
+.nav-search-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.output-box {
+    margin-top: 4rem;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 34, 52);
+
+}
+
+input {
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    padding: .8rem .8rem;
+    border-radius: 4rem;
+}
+
+input::placeholder {
+    color: rgb(221, 216, 237)
+}
+
+input:focus {
+    background-color: transparent;
+}
+
+.search-box {
+    background-color: transparent;
+    width: fit-content;
+    padding: .5rem .5rem;
+    gap: .5rem;
+    border-radius: 4rem;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size:1.5rem;
+}
+.search{
+    color:rgb(34, 34, 69);
+    background-color: rgb(98, 215, 98);
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+}
+.clear{
+    color:rgb(34, 34, 69);
+    background-color: rgb(238, 91, 91);
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+}
+.output {
+    color:rgb(182, 182, 214);
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+li{
+    margin-top: 2rem;
+}
+@media (max-width:1000px) {
+    button {
+        font-size:1rem;
+    }
+    input {
+        font-size: .9rem;
+        padding: .4rem .4rem;
+    }
+    i {
+        font-size: 1rem;
+    }
+    .output {
+        font-size: 1rem;
+    }
+    .nav-search-box{
+        margin-right: 8rem;
+    }
+}
+@media (max-width:750px){
+    button {
+        font-size:.7rem;
+    }
+    input{
+        width:100px
+    }
+}
+@media (max-width:550px){
+    nav > h2{
+        font-size: 1rem;
+    }
+    nav{
+        padding-right:.5rem;
+        padding-bottom:.5rem;
+    }
+    input{
+        width:100px;
+
+    }
+    input::placeholder {
+       font-size: .7rem;
+    }
+    .nav-search-box{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .buttons{
+        display: flex;
+    }
+    .search{
+        padding: .1rem .5rem;
+        margin-right: .7rem;
+        margin-left: 1rem;
+    }
+    .clear{
+        padding: .1rem .5rem;
+    }
+}

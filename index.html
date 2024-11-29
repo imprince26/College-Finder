@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Finder - Made by Prince</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="input-field">
+            <h2>College Finder</h2>
+            <div class="nav-search-box">
+                <span class="search-box"><i class="fa-solid fa-magnifying-glass"></i> <input type="text"
+                        placeholder="Enter Country name"></span>
+                <div class="buttons">
+                    <button id="Search" class="search">Search</button>
+                    <button id="clear" class="clear ">Clear</button>
+                </div>
+            </div>
+    
+        </nav>
+        <main class="output-box bg-info">
+    
+            <div class="output">
+                <ol id="list"></ol>
+            </div>
+        </main>
+    </div>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
