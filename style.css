@@ -94,6 +94,12 @@ button {
     padding: .2rem 1rem;
     border-radius: 1rem;
 }
+.search:hover{
+    opacity: .8;
+}
+.clear:hover{
+    opacity: .8;
+}
 
 .output {
     color: rgb(182, 182, 214);
